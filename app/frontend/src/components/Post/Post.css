@@ -1,0 +1,14 @@
+.post {
+    width: 50%;
+    margin: 16px auto;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center; 
+}
+
+.post-image {
+    width: 40%;
+    height: 200px;
+}
