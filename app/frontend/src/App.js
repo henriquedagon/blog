@@ -2,11 +2,14 @@
 import React from 'react';
 import './App.css';
 // import axios from 'axios'
+import { BrowserRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 // Components
 import Header from './components/Header/Header'
 import Post from './components/Post/Post'
 import LoginModal from './components/LoginModal/LoginModal'
 import AddPost from './components/AddPost/AddPost'
+import Posts from './components/Posts/Posts'
 // Other imports
 import blue_screen from './components/Post/blue_screen.jpg'
 
@@ -14,41 +17,14 @@ class App extends React.Component {
 
     // initial state
     state = {
-        posts: [
-            // {'id': 1, image: freedom, imageName: 'freedom', text: 'uma parada'},
-            // {'id': 2, image: freedom, imageName: 'freedom', text: 'outra parada'}
-        ],
+        // posts: [
+        // ],
+        loggedIn: false,
         showLoginModal: false,
-        authToken: ''
+        account: null,
+        authToken: null,
     }
 
-    // get posts
-    componentDidMount() {
-        fetch("http://localhost:5000/api/api/posts/")
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        posts: result.data.map((res, index) => {
-                            return {
-                                id: index,
-                                image: "http://localhost:5000/api/api/files/"+res.img_filename,
-                                imageName: res.image_name,
-                                title: res.title,
-                                text: res.post
-                            }
-                        })
-                    });
-                },
-                (error) => {
-                    this.setState({
-                        posts: [
-                            {'id': 0, image: blue_screen, imageName: 'blue screen', text: 'deu kao'},
-                        ],
-                    })
-                }
-            )
-        }
 
     //   Toggle modal when Login is clicked
     toggleLoginModal = () => {
@@ -56,9 +32,13 @@ class App extends React.Component {
         this.setState({showLoginModal: !currentLoginState})
     }
 
-    login = (token) => {
-        this.setState({authToken: token})
+    login = (account, token) => {
+        this.setState({
+            account: account,
+            authToken: token
+        })
         this.toggleLoginModal()
+        console.log('user:',this.state.account)
         console.log('token from app:',this.state.authToken)
     }
 
@@ -69,28 +49,32 @@ class App extends React.Component {
             modal = (
                 <LoginModal 
                     removeModal={this.toggleLoginModal}
-                    setToken={this.login.bind(this)}
-                    // login={this.loginHandler}    
+                    login={this.login.bind(this)}
                 />
             )
         }
 
         return (
-        <div>
-            <Header loginClick={this.toggleLoginModal}/> 
-            <AddPost/>
-            {   //return all posts
-                this.state.posts.map((post) => {
-                    return <Post
-                                image={post.image}
-                                imageName={post.imageName}
-                                title={post.title}
-                                text={post.text}
-                            />
-                })
-            }
-            {modal}
-        </div>
+        <BrowserRouter>
+            <div>
+                <Header 
+                    loginClick={this.toggleLoginModal}
+                    loggedIn={this.state.loggedIn}
+                /> 
+
+                {/* component value should be reference to class or function */}
+                <Route path="/" exact component={Posts}/>
+
+                <Route path="/add-post" exact component={() => 
+                    <AddPost 
+                        token={this.state.authToken}
+                        account={this.state.account}/>
+                } />
+
+                {modal}
+
+            </div>
+        </BrowserRouter>
       
         );
     }

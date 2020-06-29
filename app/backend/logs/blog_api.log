@@ -349,3 +349,515 @@ AttributeError: 'NoneType' object has no attribute 'encode'
 [2020-06-26 17:44:46,477] INFO in _internal: 127.0.0.1 - - [26/Jun/2020 17:44:46] "GET /api/api/posts/ HTTP/1.1" 200 -
 [2020-06-26 17:44:47,134] INFO in _internal: 127.0.0.1 - - [26/Jun/2020 17:44:47] "GET /api/api/files/20200626174005_post.jpeg HTTP/1.1" 200 -
 [2020-06-26 17:44:47,590] INFO in _internal: 127.0.0.1 - - [26/Jun/2020 17:44:47] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:18:14,843] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2020-06-28 06:18:14,887] INFO in _internal:  * Restarting with stat
+[2020-06-28 06:18:17,483] WARNING in _internal:  * Debugger is active!
+[2020-06-28 06:18:19,383] INFO in _internal:  * Debugger PIN: 239-171-407
+[2020-06-28 06:22:55,067] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:22:55] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:22:55,258] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:22:55] "GET /api/api/files/20200626174005_post.jpeg HTTP/1.1" 304 -
+[2020-06-28 06:23:31,633] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:23:31] "GET /api/swagger.json HTTP/1.1" 200 -
+[2020-06-28 06:24:26,553] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:24:26] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:24:27,194] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:24:27] "GET /api/api/files/20200626174005_post.jpeg HTTP/1.1" 200 -
+[2020-06-28 06:30:19,933] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:30:19] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:31:50,015] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:31:50] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:32:38,568] DEBUG in app: encrypted_credentials: gAAAAABe-GO2AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzVw3uIl7NKvsxXTvmHD_LsOaiX7aJ5uJfbh1Mq8S421_tpiO4_Ekv1x8CNFfj2j62
+[2020-06-28 06:32:43,683] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 06:32:38 '}, verified: True
+[2020-06-28 06:32:43,687] DEBUG in app: 
+[2020-06-28 06:32:43,692] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:32:43] "GET /api/api/get_token/gAAAAABe-GO2AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzVw3uIl7NKvsxXTvmHD_LsOaiX7aJ5uJfbh1Mq8S421_tpiO4_Ekv1x8CNFfj2j62 HTTP/1.1" 200 -
+[2020-06-28 06:34:55,025] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:34:55] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 06:34:55,146] DEBUG in app: ***authentication***
+[2020-06-28 06:34:55,147] DEBUG in app: token:undefined
+[2020-06-28 06:34:55,152] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:34:55] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 06:46:11,184] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:46:11] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:48:45,062] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:48:45] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:49:11,610] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:49:11] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:49:33,501] DEBUG in app: encrypted_credentials: gAAAAABe-GetAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz4_TfeQ0n7TqmsjpKQLykc871-_NpgsZxOoFYDTtXyFOj59NHKaPQDMWd3BWOcz7R
+[2020-06-28 06:49:34,260] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 06:49:33 '}, verified: True
+[2020-06-28 06:49:34,261] DEBUG in app: 
+[2020-06-28 06:49:34,266] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:49:34] "GET /api/api/get_token/gAAAAABe-GetAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz4_TfeQ0n7TqmsjpKQLykc871-_NpgsZxOoFYDTtXyFOj59NHKaPQDMWd3BWOcz7R HTTP/1.1" 200 -
+[2020-06-28 06:50:10,670] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:50:10] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:52:21,217] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:52:21] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:52:57,674] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:52:57] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 06:52:57,693] DEBUG in app: ***authentication***
+[2020-06-28 06:52:57,693] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTM0MjQxNzQsImlhdCI6MTU5MzMzNzc3NCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.-BZdPr15AJ3J6qkR61IxG3FmqzPYeB4P85T5hu3UXQk
+[2020-06-28 06:52:57,773] DEBUG in app: ***authentication end***
+[2020-06-28 06:52:57,979] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:52:57] "POST /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 06:53:34,843] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:53:34] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:53:35,351] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:53:35] "GET /api/api/files/20200628065257_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 06:54:01,082] DEBUG in app: encrypted_credentials: gAAAAABe-Gi5AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzG5n59QVJAVjZJ_H8qlDdf2mO6JxWDOsc9jshJCyEpa9T-aDUsu7-bf42-h6r0N2H
+[2020-06-28 06:54:01,807] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 06:54:01 '}, verified: True
+[2020-06-28 06:54:01,807] DEBUG in app: 
+[2020-06-28 06:54:01,811] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:54:01] "GET /api/api/get_token/gAAAAABe-Gi5AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzG5n59QVJAVjZJ_H8qlDdf2mO6JxWDOsc9jshJCyEpa9T-aDUsu7-bf42-h6r0N2H HTTP/1.1" 200 -
+[2020-06-28 06:54:31,051] DEBUG in app: encrypted_credentials: gAAAAABe-GjXAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz6_vk72mNqFSnbOOrFnYPwPQD0Bk4E7Y3PwkvKL2duokiYDDPQh9Pv_ERQCqNcSmZ
+[2020-06-28 06:54:31,060] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 06:54:31 '}, verified: True
+[2020-06-28 06:54:31,061] DEBUG in app: 
+[2020-06-28 06:54:31,064] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:54:31] "GET /api/api/get_token/gAAAAABe-GjXAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz6_vk72mNqFSnbOOrFnYPwPQD0Bk4E7Y3PwkvKL2duokiYDDPQh9Pv_ERQCqNcSmZ HTTP/1.1" 200 -
+[2020-06-28 06:55:02,607] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:55:02] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 06:55:02,625] DEBUG in app: ***authentication***
+[2020-06-28 06:55:02,625] DEBUG in app: token:undefined
+[2020-06-28 06:55:02,631] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:55:02] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 06:55:59,833] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:55:59] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:57:07,075] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:57:07] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:57:48,576] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:57:48] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:57:56,216] DEBUG in app: encrypted_credentials: gAAAAABe-GmkAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzZFQgLF_KuvQcDhiqz-8_IZTPKfsPxwnCkDIgJXVxg0Hs-ywFu4EccBLfRj84fEsP
+[2020-06-28 06:57:56,225] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 06:57:56 '}, verified: True
+[2020-06-28 06:57:56,227] DEBUG in app: 
+[2020-06-28 06:57:56,230] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:57:56] "GET /api/api/get_token/gAAAAABe-GmkAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzZFQgLF_KuvQcDhiqz-8_IZTPKfsPxwnCkDIgJXVxg0Hs-ywFu4EccBLfRj84fEsP HTTP/1.1" 200 -
+[2020-06-28 06:58:13,582] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:58:13] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 06:58:13,602] DEBUG in app: ***authentication***
+[2020-06-28 06:58:13,605] DEBUG in app: token:None
+[2020-06-28 06:58:13,677] DEBUG in app: authentication error
+[2020-06-28 06:58:13,678] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 06:58:13,687] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:58:13] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 06:59:08,131] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:59:08] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 06:59:25,738] DEBUG in app: encrypted_credentials: gAAAAABe-Gn-AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzACUFWCZvx1yH-UTtQG7FILJO79JYixiVW2oERPaPJOfC4bh2IsvUWCt93pT_KB2W
+[2020-06-28 06:59:25,746] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 06:59:25 '}, verified: True
+[2020-06-28 06:59:25,748] DEBUG in app: 
+[2020-06-28 06:59:25,751] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:59:25] "GET /api/api/get_token/gAAAAABe-Gn-AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzACUFWCZvx1yH-UTtQG7FILJO79JYixiVW2oERPaPJOfC4bh2IsvUWCt93pT_KB2W HTTP/1.1" 200 -
+[2020-06-28 06:59:40,405] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:59:40] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 06:59:40,423] DEBUG in app: ***authentication***
+[2020-06-28 06:59:40,424] DEBUG in app: token:None
+[2020-06-28 06:59:40,425] DEBUG in app: authentication error
+[2020-06-28 06:59:40,426] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 06:59:40,432] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 06:59:40] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:00:15,708] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:00:15] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:00:20,296] DEBUG in app: encrypted_credentials: gAAAAABe-Go0AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzYef7qaIUqjA2ROnjIqTxoSf6Fjfp4EF7XX_RkmLh834uYHGpuyJVY0LjFIcX9NLF
+[2020-06-28 07:00:20,304] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:00:20 '}, verified: True
+[2020-06-28 07:00:20,307] DEBUG in app: 
+[2020-06-28 07:00:20,310] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:00:20] "GET /api/api/get_token/gAAAAABe-Go0AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzYef7qaIUqjA2ROnjIqTxoSf6Fjfp4EF7XX_RkmLh834uYHGpuyJVY0LjFIcX9NLF HTTP/1.1" 200 -
+[2020-06-28 07:00:34,464] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:00:34] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:00:34,485] DEBUG in app: ***authentication***
+[2020-06-28 07:00:34,486] DEBUG in app: token:None
+[2020-06-28 07:00:34,487] DEBUG in app: authentication error
+[2020-06-28 07:00:34,488] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:00:34,495] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:00:34] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:01:25,227] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:01:25] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:01:32,100] DEBUG in app: encrypted_credentials: gAAAAABe-Gp8AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz-sr8qQQUmY7qmnEUKwHHWygFgo2De_Gggeqb-l7EBwD1e5BzyEyrz5sa4SEp3Uir
+[2020-06-28 07:01:32,108] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:01:32 '}, verified: True
+[2020-06-28 07:01:32,109] DEBUG in app: 
+[2020-06-28 07:01:32,111] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:01:32] "GET /api/api/get_token/gAAAAABe-Gp8AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz-sr8qQQUmY7qmnEUKwHHWygFgo2De_Gggeqb-l7EBwD1e5BzyEyrz5sa4SEp3Uir HTTP/1.1" 200 -
+[2020-06-28 07:01:47,278] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:01:47] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:01:47,298] DEBUG in app: ***authentication***
+[2020-06-28 07:01:47,299] DEBUG in app: token:None
+[2020-06-28 07:01:47,301] DEBUG in app: authentication error
+[2020-06-28 07:01:47,302] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:01:47,306] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:01:47] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:05:30,855] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:05:30] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:05:35,538] DEBUG in app: encrypted_credentials: gAAAAABe-GtwAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz2Ead4-lLjDZe1tH2HsZIcso7nAWi82JtnQrbPyhymRwiGFrqgU57c9BkoRAZGvzp
+[2020-06-28 07:05:36,542] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:05:35 '}, verified: True
+[2020-06-28 07:05:36,549] DEBUG in app: 
+[2020-06-28 07:05:36,555] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:05:36] "GET /api/api/get_token/gAAAAABe-GtwAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz2Ead4-lLjDZe1tH2HsZIcso7nAWi82JtnQrbPyhymRwiGFrqgU57c9BkoRAZGvzp HTTP/1.1" 200 -
+[2020-06-28 07:06:11,882] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:06:11] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:06:11,903] DEBUG in app: ***authentication***
+[2020-06-28 07:06:11,906] DEBUG in app: token:None
+[2020-06-28 07:06:11,911] DEBUG in app: authentication error
+[2020-06-28 07:06:11,914] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:06:11,922] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:06:11] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:08:54,540] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:08:54] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:09:20,607] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:09:20] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:09:20,624] DEBUG in app: ***authentication***
+[2020-06-28 07:09:20,627] DEBUG in app: token:None
+[2020-06-28 07:09:20,631] DEBUG in app: authentication error
+[2020-06-28 07:09:20,635] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:09:20,640] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:09:20] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:10:21,775] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:10:21] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:10:34,876] DEBUG in app: encrypted_credentials: gAAAAABe-GybAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz32tU3K1qgb7QCyAla86QLyb9vr84oc_V6AdPrA6cj1NoiaTo8uB10Sna3g3Qz1Z7
+[2020-06-28 07:10:34,884] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:10:34 '}, verified: True
+[2020-06-28 07:10:34,886] DEBUG in app: 
+[2020-06-28 07:10:34,888] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:10:34] "GET /api/api/get_token/gAAAAABe-GybAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz32tU3K1qgb7QCyAla86QLyb9vr84oc_V6AdPrA6cj1NoiaTo8uB10Sna3g3Qz1Z7 HTTP/1.1" 200 -
+[2020-06-28 07:11:01,375] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:11:01] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:11:08,872] DEBUG in app: encrypted_credentials: gAAAAABe-Gy9AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzrrORwPua0diJg-UxJ4OK5mrF7xwURWBmSfAY2zjdFq7yYDAJzTOPmLJkxXC-9Hm2
+[2020-06-28 07:11:08,881] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:11:08 '}, verified: True
+[2020-06-28 07:11:08,881] DEBUG in app: 
+[2020-06-28 07:11:08,884] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:11:08] "GET /api/api/get_token/gAAAAABe-Gy9AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzrrORwPua0diJg-UxJ4OK5mrF7xwURWBmSfAY2zjdFq7yYDAJzTOPmLJkxXC-9Hm2 HTTP/1.1" 200 -
+[2020-06-28 07:11:21,955] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:11:21] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:11:21,979] DEBUG in app: ***authentication***
+[2020-06-28 07:11:21,979] DEBUG in app: token:None
+[2020-06-28 07:11:21,980] DEBUG in app: authentication error
+[2020-06-28 07:11:21,982] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:11:21,985] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:11:21] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:11:54,890] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:11:54] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:12:03,519] DEBUG in app: encrypted_credentials: gAAAAABe-GzzAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzi_GzqucGXZwBlCiFhzx715toGmPpYIRi5vVvd7wLaUEefK9UWcbgNY1NypHN7MKV
+[2020-06-28 07:12:03,528] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:12:03 '}, verified: True
+[2020-06-28 07:12:03,528] DEBUG in app: 
+[2020-06-28 07:12:03,530] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:12:03] "GET /api/api/get_token/gAAAAABe-GzzAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzi_GzqucGXZwBlCiFhzx715toGmPpYIRi5vVvd7wLaUEefK9UWcbgNY1NypHN7MKV HTTP/1.1" 200 -
+[2020-06-28 07:12:19,942] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:12:19] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:12:19,961] DEBUG in app: ***authentication***
+[2020-06-28 07:12:19,962] DEBUG in app: token:None
+[2020-06-28 07:12:19,963] DEBUG in app: authentication error
+[2020-06-28 07:12:19,964] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:12:19,979] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:12:19] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:13:34,649] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:13:34] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:13:48,430] DEBUG in app: encrypted_credentials: gAAAAABe-G1cAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzb4J7IjEJMmrOwjbUhNyFqxc5QzRRx4tAvSMWDcSsrOVZuwhk-ldG_llm88EQaRdP
+[2020-06-28 07:13:48,438] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:13:48 '}, verified: True
+[2020-06-28 07:13:48,439] DEBUG in app: 
+[2020-06-28 07:13:48,441] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:13:48] "GET /api/api/get_token/gAAAAABe-G1cAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzb4J7IjEJMmrOwjbUhNyFqxc5QzRRx4tAvSMWDcSsrOVZuwhk-ldG_llm88EQaRdP HTTP/1.1" 200 -
+[2020-06-28 07:14:21,411] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:14:21] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:14:21,437] DEBUG in app: ***authentication***
+[2020-06-28 07:14:21,438] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNjY1NDEsImlhdCI6MTU5MzE4MDE0MSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ._XJMTl8q5QcEZSB--VQN1qxwkw2Ah5uzjgsZb-NVRhE
+[2020-06-28 07:14:21,443] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:14:21] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:21:34,348] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:21:34] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:21:43,156] DEBUG in app: encrypted_credentials: gAAAAABe-G83AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzWrhCFqgvHQohn-CegRbxlnJRqDzrUYHN9MS75qlG0oP1BK-MHzAFR-tmJopAMT3K
+[2020-06-28 07:21:43,164] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:21:43 '}, verified: True
+[2020-06-28 07:21:43,166] DEBUG in app: 
+[2020-06-28 07:21:43,169] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:21:43] "GET /api/api/get_token/gAAAAABe-G83AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzWrhCFqgvHQohn-CegRbxlnJRqDzrUYHN9MS75qlG0oP1BK-MHzAFR-tmJopAMT3K HTTP/1.1" 200 -
+[2020-06-28 07:21:58,997] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:21:58] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:21:59,024] DEBUG in app: ***authentication***
+[2020-06-28 07:21:59,027] DEBUG in app: token:None
+[2020-06-28 07:21:59,031] DEBUG in app: authentication error
+[2020-06-28 07:21:59,038] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:21:59,045] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:21:59] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:22:49,801] DEBUG in app: encrypted_credentials: gAAAAABe-G96AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzomEhB5MsoQQJwYuniXpwAb6SlJ8dLDnahDps4WhJl0ciZ_rq8_HgnBpPrIsEUCLP
+[2020-06-28 07:22:49,810] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:22:49 '}, verified: True
+[2020-06-28 07:22:49,810] DEBUG in app: 
+[2020-06-28 07:22:49,813] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:22:49] "GET /api/api/get_token/gAAAAABe-G96AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzomEhB5MsoQQJwYuniXpwAb6SlJ8dLDnahDps4WhJl0ciZ_rq8_HgnBpPrIsEUCLP HTTP/1.1" 200 -
+[2020-06-28 07:23:14,164] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:23:14] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:23:21,759] DEBUG in app: encrypted_credentials: gAAAAABe-G-aAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzMjmUV2XdPsyaINEmjhU3nI1kgCsDeXGbCa9_V7Ci2IkSZlC2kvJ2xZeuKl_IQ30l
+[2020-06-28 07:23:21,767] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:23:21 '}, verified: True
+[2020-06-28 07:23:21,769] DEBUG in app: 
+[2020-06-28 07:23:21,771] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:23:21] "GET /api/api/get_token/gAAAAABe-G-aAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzMjmUV2XdPsyaINEmjhU3nI1kgCsDeXGbCa9_V7Ci2IkSZlC2kvJ2xZeuKl_IQ30l HTTP/1.1" 200 -
+[2020-06-28 07:23:44,950] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:23:44] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:23:44,971] DEBUG in app: ***authentication***
+[2020-06-28 07:23:44,972] DEBUG in app: token:None
+[2020-06-28 07:23:44,973] DEBUG in app: authentication error
+[2020-06-28 07:23:44,974] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:23:44,981] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:23:44] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:30:34,178] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:30:34] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:30:34,197] DEBUG in app: ***authentication***
+[2020-06-28 07:30:34,200] DEBUG in app: token:None
+[2020-06-28 07:30:34,203] DEBUG in app: authentication error
+[2020-06-28 07:30:34,206] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:30:34,211] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:30:34] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:30:41,323] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:30:41] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:30:41,345] DEBUG in app: ***authentication***
+[2020-06-28 07:30:41,346] DEBUG in app: token:None
+[2020-06-28 07:30:41,347] DEBUG in app: authentication error
+[2020-06-28 07:30:41,348] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:30:41,351] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:30:41] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:31:28,001] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:31:28] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:31:28,018] DEBUG in app: ***authentication***
+[2020-06-28 07:31:28,022] DEBUG in app: token:None
+[2020-06-28 07:31:28,026] DEBUG in app: authentication error
+[2020-06-28 07:31:28,029] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:31:28,034] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:31:28] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:32:33,460] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:32:33] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:32:33,481] DEBUG in app: ***authentication***
+[2020-06-28 07:32:33,481] DEBUG in app: token:None
+[2020-06-28 07:32:33,483] DEBUG in app: authentication error
+[2020-06-28 07:32:33,484] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:32:33,500] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:32:33] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:32:56,795] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:32:56] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:33:01,716] DEBUG in app: encrypted_credentials: gAAAAABe-HHeAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzEjWejwd4aO7Ovnn9C-Z00l4vLYhzFRCsrUxoMofy7JvZXt799DEym5qKZc1BWzJW
+[2020-06-28 07:33:01,735] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:33:01 '}, verified: True
+[2020-06-28 07:33:01,739] DEBUG in app: 
+[2020-06-28 07:33:01,743] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:33:01] "GET /api/api/get_token/gAAAAABe-HHeAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzEjWejwd4aO7Ovnn9C-Z00l4vLYhzFRCsrUxoMofy7JvZXt799DEym5qKZc1BWzJW HTTP/1.1" 200 -
+[2020-06-28 07:33:16,322] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:33:16] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:33:16,343] DEBUG in app: ***authentication***
+[2020-06-28 07:33:16,344] DEBUG in app: token:None
+[2020-06-28 07:33:16,345] DEBUG in app: authentication error
+[2020-06-28 07:33:16,346] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:33:16,353] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:33:16] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:34:31,129] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:34:31] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:35:17,996] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:35:17] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:35:18,016] DEBUG in app: ***authentication***
+[2020-06-28 07:35:18,019] DEBUG in app: token:None
+[2020-06-28 07:35:18,022] DEBUG in app: authentication error
+[2020-06-28 07:35:18,026] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:35:18,034] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:35:18] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:36:20,310] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:36:20] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:36:29,206] DEBUG in app: encrypted_credentials: gAAAAABe-HKtAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzPMHUnLV5FmQUvT7YNUq-h8WwFo7l1QX-6VzZvx4APSpqBNG83xdWD9Sij6jz6H6l
+[2020-06-28 07:36:29,214] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:36:29 '}, verified: True
+[2020-06-28 07:36:29,215] DEBUG in app: 
+[2020-06-28 07:36:29,218] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:36:29] "GET /api/api/get_token/gAAAAABe-HKtAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzPMHUnLV5FmQUvT7YNUq-h8WwFo7l1QX-6VzZvx4APSpqBNG83xdWD9Sij6jz6H6l HTTP/1.1" 200 -
+[2020-06-28 07:36:44,782] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:36:44] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:36:44,804] DEBUG in app: ***authentication***
+[2020-06-28 07:36:44,807] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTM0MjYxNjksImlhdCI6MTU5MzMzOTc2OSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.AAQ5fhI3_hfd0mrys51-PqFx-tKT1YtoYyXM6YFw_4E
+[2020-06-28 07:36:44,813] DEBUG in app: ***authentication end***
+[2020-06-28 07:36:45,026] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:36:45] "POST /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:38:11,864] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:38:11] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:38:12,278] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:38:12] "GET /api/api/files/20200628073644_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 07:38:48,107] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:38:48] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:38:48,131] DEBUG in app: ***authentication***
+[2020-06-28 07:38:48,134] DEBUG in app: token:None
+[2020-06-28 07:38:48,137] DEBUG in app: authentication error
+[2020-06-28 07:38:48,141] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:38:48,148] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:38:48] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:42:29,731] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:42:29] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:44:08,674] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:44:08] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:44:37,920] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:44:37] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:44:37,941] DEBUG in app: ***authentication***
+[2020-06-28 07:44:37,941] DEBUG in app: token:None
+[2020-06-28 07:44:37,943] DEBUG in app: authentication error
+[2020-06-28 07:44:37,944] DEBUG in app: Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 145, in decorated_function
+    credentials = auth.decode_auth_token(token)
+  File "/home/crypto/Projects/Blog/app/backend/auth.py", line 39, in decode_auth_token
+    payload = jwt.decode(auth_token.encode(), config['DEFAULT']['SECRET_KEY'])
+AttributeError: 'NoneType' object has no attribute 'encode'
+
+[2020-06-28 07:44:37,951] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:44:37] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:49:09,771] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:49:09] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:49:34,962] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:49:34] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:49:34,984] DEBUG in app: ***authentication***
+[2020-06-28 07:49:34,985] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTM0MjYxNjksImlhdCI6MTU5MzMzOTc2OSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.AAQ5fhI3_hfd0mrys51-PqFx-tKT1YtoYyXM6YFw_4E
+[2020-06-28 07:49:34,987] DEBUG in app: ***authentication end***
+[2020-06-28 07:49:35,065] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:49:35] "POST /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:49:57,956] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:49:57] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:49:58,342] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:49:58] "GET /api/api/files/20200628074934_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 07:50:37,115] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:50:37] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:50:45,816] DEBUG in app: encrypted_credentials: gAAAAABe-HYGAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz6abeD_50wvdYBILs28q2bAg8RgtJ-CbdlaKlneSj7rRwEN3pzN8LlTHj_MRgI6Oq
+[2020-06-28 07:50:45,827] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:50:45 '}, verified: True
+[2020-06-28 07:50:45,828] DEBUG in app: 
+[2020-06-28 07:50:45,831] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:50:45] "GET /api/api/get_token/gAAAAABe-HYGAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSz6abeD_50wvdYBILs28q2bAg8RgtJ-CbdlaKlneSj7rRwEN3pzN8LlTHj_MRgI6Oq HTTP/1.1" 200 -
+[2020-06-28 07:51:21,652] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:51:21] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:51:21,673] DEBUG in app: ***authentication***
+[2020-06-28 07:51:21,677] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTM0Mjc4NDUsImlhdCI6MTU5MzM0MTQ0NSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.YFUVcv4DinSor34NAb-fDmkl8TRy8wegeCqBUCKGLBo
+[2020-06-28 07:51:21,682] DEBUG in app: ***authentication end***
+[2020-06-28 07:51:21,744] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:51:21] "POST /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:51:51,369] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:51:51] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:51:51,825] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:51:51] "GET /api/api/files/20200628075121_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 07:52:26,991] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:52:26] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:52:27,009] DEBUG in app: ***authentication***
+[2020-06-28 07:52:27,014] DEBUG in app: token:
+[2020-06-28 07:52:27,020] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:52:27] "POST /api/api/add_post/ HTTP/1.1" 400 -
+[2020-06-28 07:53:00,022] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:53:00] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:53:40,038] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:53:40] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:53:45,232] DEBUG in app: encrypted_credentials: gAAAAABe-Ha5AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzvvOImh49tk1RTD52xZYkYPC6WkuZ-tr3-tCS6ndUgEeYnot9_DozqvW5X4RgaElp
+[2020-06-28 07:53:45,259] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 07:53:45 '}, verified: True
+[2020-06-28 07:53:45,259] DEBUG in app: 
+[2020-06-28 07:53:45,266] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:53:45] "GET /api/api/get_token/gAAAAABe-Ha5AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzvvOImh49tk1RTD52xZYkYPC6WkuZ-tr3-tCS6ndUgEeYnot9_DozqvW5X4RgaElp HTTP/1.1" 200 -
+[2020-06-28 07:54:20,312] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:54:20] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:54:20,337] DEBUG in app: ***authentication***
+[2020-06-28 07:54:20,340] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTM0MjgwMjUsImlhdCI6MTU5MzM0MTYyNSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.syzd0j_KrjWukxPCN9ysJchOSy2nDMdTxXSBLVbWldA
+[2020-06-28 07:54:20,352] DEBUG in app: ***authentication end***
+[2020-06-28 07:54:20,407] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:54:20] "POST /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 07:55:22,604] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:55:22] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 07:55:23,063] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:55:23] "GET /api/api/files/20200628075420_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 07:59:26,057] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 07:59:26] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:16:33,281] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:16:33] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:21:15,619] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:21:15] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:21:49,771] DEBUG in app: encrypted_credentials: gAAAAABe-H1OAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzxjeriDN3Dn3aVVd44gzHVRcD5LQRLl16I1nCdK_DDzPwsucOmYU_-w8zOvucwX5W
+[2020-06-28 08:21:49,778] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 08:21:49 '}, verified: True
+[2020-06-28 08:21:49,779] DEBUG in app: 
+[2020-06-28 08:21:49,781] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:21:49] "GET /api/api/get_token/gAAAAABe-H1OAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzxjeriDN3Dn3aVVd44gzHVRcD5LQRLl16I1nCdK_DDzPwsucOmYU_-w8zOvucwX5W HTTP/1.1" 200 -
+[2020-06-28 08:24:12,332] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:24:12] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:24:54,629] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:24:54] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:25:07,095] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:25:07] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:25:14,471] DEBUG in app: encrypted_credentials: gAAAAABe-H4aAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzhgukrZugwwLELHBevrj_XLzgPz6ocltqD9XGIrTiSAj6WKPO1G2keADOAuzear2H
+[2020-06-28 08:25:14,479] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 08:25:14 '}, verified: True
+[2020-06-28 08:25:14,481] DEBUG in app: 
+[2020-06-28 08:25:14,483] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:25:14] "GET /api/api/get_token/gAAAAABe-H4aAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzhgukrZugwwLELHBevrj_XLzgPz6ocltqD9XGIrTiSAj6WKPO1G2keADOAuzear2H HTTP/1.1" 200 -
+[2020-06-28 08:28:17,330] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:28:17] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:28:50,353] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:28:50] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:28:54,879] DEBUG in app: encrypted_credentials: gAAAAABe-H73AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzw5FQ87wSj3jZIcefDdoKTKisg9PzmMa_PeIelY3RYusZU7UVWOTI4H8XSEjrMmTi
+[2020-06-28 08:28:54,888] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 08:28:54 '}, verified: True
+[2020-06-28 08:28:54,891] DEBUG in app: 
+[2020-06-28 08:28:54,896] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:28:54] "GET /api/api/get_token/gAAAAABe-H73AAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzw5FQ87wSj3jZIcefDdoKTKisg9PzmMa_PeIelY3RYusZU7UVWOTI4H8XSEjrMmTi HTTP/1.1" 200 -
+[2020-06-28 08:31:40,179] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:31:40] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:32:21,563] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:32:21] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:32:48,364] DEBUG in app: encrypted_credentials: gAAAAABe-H_gAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzE-EsKTgTYKMrP5iRxH5C0dsXFYlH6CR5tLHjclvZ6FaUjT89wYnyElTGHNt2Ih-A
+[2020-06-28 08:32:48,372] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jun 28 2020 08:32:48 '}, verified: True
+[2020-06-28 08:32:48,372] DEBUG in app: 
+[2020-06-28 08:32:48,376] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:32:48] "GET /api/api/get_token/gAAAAABe-H_gAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92G7Z9NQKjNQKRcNQSOpNGSzE-EsKTgTYKMrP5iRxH5C0dsXFYlH6CR5tLHjclvZ6FaUjT89wYnyElTGHNt2Ih-A HTTP/1.1" 200 -
+[2020-06-28 08:33:55,085] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:33:55] "OPTIONS /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 08:33:55,106] DEBUG in app: ***authentication***
+[2020-06-28 08:33:55,106] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTM0MzAzNjgsImlhdCI6MTU5MzM0Mzk2OCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.zUSTNKTjOPW0vp7UFLq_rtYyx1UetAxqj6tLvLXz5E8
+[2020-06-28 08:33:55,112] DEBUG in app: ***authentication end***
+[2020-06-28 08:33:55,194] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:33:55] "POST /api/api/add_post/ HTTP/1.1" 200 -
+[2020-06-28 08:34:04,638] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:34:04] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 08:34:04,980] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 08:34:04] "GET /api/api/files/20200628083355_post.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:48,397] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:48] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 12:40:49,605] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200626174005_post.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:49,692] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200628065257_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:49,765] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200628073644_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:49,813] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200628074934_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:49,839] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200628083355_post.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:49,868] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200628075121_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:49,879] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:49] "GET /api/api/files/20200628075420_bonita.jpeg HTTP/1.1" 200 -
+[2020-06-28 12:40:59,717] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:40:59] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 12:43:58,617] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:43:58] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 12:44:45,062] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 12:44:45] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 14:58:29,687] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 14:58:29] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:04:25,412] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:04:25] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:07:13,080] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:07:13] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:08:01,462] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:08:01] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:12:20,880] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:12:20] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:14:06,667] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:14:06] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:14:18,724] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:14:18] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:14:42,458] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:14:42] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:15:03,156] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:15:03] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:16:09,154] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:16:09] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:17:07,679] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:17:07] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:18:43,130] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:18:43] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:19:36,305] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:19:36] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:21:02,107] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:21:02] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:21:25,980] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:21:25] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 15:21:33,922] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 15:21:33] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 16:46:14,492] INFO in _internal:  * Detected change in '/home/crypto/Projects/Blog/app/backend/backend.py', reloading
+[2020-06-28 16:46:24,948] INFO in _internal:  * Restarting with stat
+[2020-06-28 16:49:01,966] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2020-06-28 16:49:01,981] INFO in _internal:  * Restarting with stat
+[2020-06-28 16:49:05,093] WARNING in _internal:  * Debugger is active!
+[2020-06-28 16:49:05,815] INFO in _internal:  * Debugger PIN: 239-171-407
+[2020-06-28 16:49:27,317] INFO in _internal:  * Detected change in '/home/crypto/Projects/Blog/app/backend/backend.py', reloading
+[2020-06-28 16:49:27,671] INFO in _internal:  * Restarting with stat
+[2020-06-28 16:49:34,448] WARNING in _internal:  * Debugger is active!
+[2020-06-28 16:49:34,595] INFO in _internal:  * Debugger PIN: 239-171-407
+[2020-06-28 16:49:34,764] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:49:34] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 16:50:52,026] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:50:52] "GET / HTTP/1.1" 404 -
+[2020-06-28 16:50:56,055] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:50:56] "GET /favicon.ico HTTP/1.1" 404 -
+[2020-06-28 16:51:05,544] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:05] "GET /api HTTP/1.1" 308 -
+[2020-06-28 16:51:05,822] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:05] "GET /api/ HTTP/1.1" 200 -
+[2020-06-28 16:51:06,229] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:06] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+[2020-06-28 16:51:06,245] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:06] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+[2020-06-28 16:51:06,618] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:06] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+[2020-06-28 16:51:06,664] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:06] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+[2020-06-28 16:51:07,425] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:07] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+[2020-06-28 16:51:08,795] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:51:08] "GET /api/swagger.json HTTP/1.1" 200 -
+[2020-06-28 16:52:53,769] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:52:53] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 16:53:39,601] INFO in _internal:  * Detected change in '/home/crypto/Projects/Blog/app/backend/backend.py', reloading
+[2020-06-28 16:53:40,022] INFO in _internal:  * Restarting with stat
+[2020-06-28 16:53:43,735] WARNING in _internal:  * Debugger is active!
+[2020-06-28 16:53:43,764] INFO in _internal:  * Debugger PIN: 239-171-407
+[2020-06-28 16:53:54,383] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:53:54] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 16:54:11,089] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:54:11] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 16:58:40,205] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 16:58:40] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:06:24,579] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:06:24] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:06:43,073] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:06:43] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:08:21,043] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:08:21] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:08:56,229] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:08:56] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:09:58,832] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:09:58] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:14:37,378] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:14:37] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:17:25,019] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:17:25] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:22:46,940] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:22:46] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 17:24:26,709] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 17:24:26] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:19:27,001] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:19:27] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:20:03,222] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:20:03] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:21:22,568] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:21:22] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:26:55,870] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:26:55] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:31:20,511] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:31:20] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:35:38,626] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:35:38] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:35:51,206] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:35:51] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:36:21,741] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:36:21] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:59:38,301] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:38] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:59:38,440] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:38] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 19:59:39,156] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:39] "GET /api/api/files/20200628065257_bonita.jpeg HTTP/1.1" 304 -
+[2020-06-28 19:59:39,185] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:39] "GET /api/api/files/20200628074934_bonita.jpeg HTTP/1.1" 304 -
+[2020-06-28 19:59:39,217] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:39] "GET /api/api/files/20200628073644_bonita.jpeg HTTP/1.1" 304 -
+[2020-06-28 19:59:39,267] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:39] "GET /api/api/files/20200628075121_bonita.jpeg HTTP/1.1" 304 -
+[2020-06-28 19:59:39,284] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:39] "GET /api/api/files/20200626174005_post.jpeg HTTP/1.1" 304 -
+[2020-06-28 19:59:39,306] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 19:59:39] "GET /api/api/files/20200628075420_bonita.jpeg HTTP/1.1" 304 -
+[2020-06-28 20:02:41,663] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:02:41] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:02:41,774] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:02:41] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:04:07,914] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:04:07] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:04:13,478] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:04:13] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:04:13,635] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:04:13] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:06:42,351] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:06:42] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:10:16,460] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:10:16] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:39:13,482] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:39:13] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:39:14,204] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:39:14] "GET /api/api/files/20200628083355_post.jpeg HTTP/1.1" 304 -
+[2020-06-28 20:45:59,242] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:45:59] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-28 20:46:31,390] INFO in _internal: 127.0.0.1 - - [28/Jun/2020 20:46:31] "GET /api/api/posts/ HTTP/1.1" 200 -
+[2020-06-29 00:35:55,496] INFO in _internal: 127.0.0.1 - - [29/Jun/2020 00:35:55] "GET /api/api/posts/ HTTP/1.1" 200 -

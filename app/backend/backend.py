@@ -39,7 +39,9 @@ class Posts:
         self.conn.commit()
 
     def view(self):
-        self.cursor.execute(f'select title, post, categories, img_filename, image_name, author, date from posts')
+        self.cursor.execute(f'''select title, post, categories, img_filename, image_name, author, date 
+                                from posts
+                                order by date desc''')
         rows = self.cursor.fetchall()
         return rows
 

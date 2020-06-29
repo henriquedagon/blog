@@ -9,6 +9,10 @@ class loginModal extends React.Component{
 
     }
         
+    state = {
+        loggedIn: this.props.loggedIn
+    }    
+
     handleSubmit(event) {
         event.preventDefault();
 
@@ -27,20 +31,17 @@ class loginModal extends React.Component{
               "tme": String(Date()).slice(0,25) 
         }))
         
+        const account = event.target.account.value
         const that = this
-        // usar o axios
         fetch('http://localhost:5000/api/api/get_token/'+fernetToken.token, {
           method: 'GET',
         }).then(res => res.json()).then(
             result => {
-                that.props.setToken(result.token)
-                console.log(that)
-                // return result.token
+                that.props.login(account, result.token)
             }
         )
-
     }
-    
+
     render() {
         return (
             <form onSubmit={this.handleSubmit.bind(this)} class="login-modal">

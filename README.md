@@ -17,7 +17,8 @@ As tecnologias:
 -----------------------------------------------------------------------------------
 
 O desenvolvimento até o momento:
-- Uma tela com cabeçalho e botão de login na parte superior, formulário de adicionar posts no centro e os post já criados na parte inferior.
+- Uma tela com cabeçalho e botão de login na parte superior e os post já criados.
+- Uma tela com cabeçalho e botão de login na parte superior e formulário de adicionar posts.
 
 - A API contém um swagger em http:localhost:5000/api/ e foram criadas as view:
     - add_post - view para adicionar posts
@@ -34,7 +35,7 @@ O desenvolvimento até o momento:
  -----------------------------------------------------------------------------------
 
 Próximos passos:
-- Fazer o roteamento das páginas.
+- Terminar o roteamento das páginas.
 - Criar os containers Docker com Dockerfile e docker-compose.
 - Adicionar links de compartilhameto.
 - Fazer filtros das postagens por categoria.

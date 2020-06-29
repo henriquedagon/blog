@@ -3,7 +3,6 @@ import './AddPost.css'
 import axios from 'axios'
 import cors from 'cors'
 axios.defaults.baseURL = 'http://localhost:5000/api/api'
-axios.defaults.headers.common['token'] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNjY1NDEsImlhdCI6MTU5MzE4MDE0MSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ._XJMTl8q5QcEZSB--VQN1qxwkw2Ah5uzjgsZb-NVRhE'
 axios.defaults.headers.common['mode'] = 'no-cors'
 
 class AddPost extends React.Component{
@@ -17,42 +16,11 @@ class AddPost extends React.Component{
 
         const form = document.getElementById('add-post-form')
         const data = new FormData(form)
-        // data.append('title','titulo')
-        // data.append('post','postagem')
-        // data.append('categories','cat1,cat2')
-        data.append('author','administrador')
-        // data.append('token','eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNjY1NDEsImlhdCI6MTU5MzE4MDE0MSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ._XJMTl8q5QcEZSB--VQN1qxwkw2Ah5uzjgsZb-NVRhE')
-        const headers = new Headers({
-            // 'token':'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNjY1NDEsImlhdCI6MTU5MzE4MDE0MSwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ._XJMTl8q5QcEZSB--VQN1qxwkw2Ah5uzjgsZb-NVRhE',
-                                    //  'mode':'no-cors',
-                                     'Access-Control-Allow-Origin':'*'})
-
-        console.log('data:',data)
-        const that = this
-        // usar o axios
-        // fetch(
-        //     // 'https://jsonplaceholder.typicode.com/posts/'
-        //     'http://localhost:5000/api/api/add_post/'
-        // , {
-        // method: 'POST',
-        // body: data,
-        // mode: 'no-cors',
-        // headers: headers
-        // })
-        // .then(res => 
-        //     // res.json()
-        //     console.log(res))
-        // // .then(
-        // //     result => {
-        // //         // that.props.setToken(result.token)
-        // //         // console.log(that)
-        // //         console.log('responsta:',result)
-        // //     }
-        // // )
-        axios.post(
-            'http://localhost:5000/api/api/add_post/'
-            // 'https://jsonplaceholder.typicode.com/posts/'
-            , data, {headers: headers})
+        data.append('author',this.props.account)
+        
+        axios.defaults.headers.common['token'] = this.props.token
+        console.log('token:',this.props.token)
+        axios.post('http://localhost:5000/api/api/add_post/', data)
             .then(response => console.log(response))
 
     }
