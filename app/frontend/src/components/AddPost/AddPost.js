@@ -2,6 +2,7 @@ import React from 'react';
 import './AddPost.css'
 import axios from 'axios'
 import cors from 'cors'
+import { Redirect } from 'react-router';
 axios.defaults.baseURL = 'http://localhost:5000/api/api'
 axios.defaults.headers.common['mode'] = 'no-cors'
 
@@ -9,6 +10,10 @@ class AddPost extends React.Component{
     constructor (props){
         super (props)
 
+    }
+
+    state = {
+        postAdded: false
     }
 
     handleSubmit(event) {
@@ -22,10 +27,15 @@ class AddPost extends React.Component{
         console.log('token:',this.props.token)
         axios.post('http://localhost:5000/api/api/add_post/', data)
             .then(response => console.log(response))
-
+        this.setState({postAdded:true})
     }
 
     render(){
+
+        if (this.state.postAdded){
+            return <Redirect to='/'/>
+        }
+
         return (
             <form onSubmit={this.handleSubmit.bind(this)} id="add-post-form">
                 <div class="form">

@@ -35,7 +35,7 @@ O desenvolvimento até o momento:
  -----------------------------------------------------------------------------------
 
 Próximos passos:
-- Terminar o roteamento das páginas.
+- ~~terminar o roteamento das páginas.~~
 - Criar os containers Docker com Dockerfile e docker-compose.
 - Adicionar links de compartilhameto.
 - Fazer filtros das postagens por categoria.

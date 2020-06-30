@@ -2,6 +2,7 @@ import React from 'react';
 import './LoginModal.css'
 // import axios from 'axios'
 import fernet from 'fernet/fernetBrowser'
+import { Redirect } from 'react-router';
 
 class loginModal extends React.Component{
     constructor (props){
@@ -37,12 +38,27 @@ class loginModal extends React.Component{
           method: 'GET',
         }).then(res => res.json()).then(
             result => {
-                that.props.login(account, result.token)
+                if (result.token){
+                    that.setState({loggedIn: true})
+                    // console.log('that.state.loggedIn:',that.state.loggedIn)
+                    that.props.login(account, result.token)            
+                } else {
+                    alert('Username or password incorrect')
+                }
             }
         )
     }
 
     render() {
+
+        const redirect = this.state.loggedIn
+
+        // console.log('redirecting:',redirect)
+
+        if (redirect) {
+            return <Redirect to='/add-post'/>
+        }
+
         return (
             <form onSubmit={this.handleSubmit.bind(this)} class="login-modal">
                 <div id="backdrop" onClick={this.props.removeModal}></div>
