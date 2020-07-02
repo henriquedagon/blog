@@ -97,11 +97,9 @@ def byte2image(b):
     return Image.open(BytesIO(b))
 
 
-# if __name__ == '__main__':
-#     posts = Posts(conn_str())
-#     print(posts.view())
+if __name__ == '__main__':
+    posts = Posts(conn_str())
+    print('posts:',posts.view())
 
-#     users = Users(conn_str())
-#     users.insert('usuario','1234', 1)
-#     users.insert('administrador','12345', 2)
-#     print(users.view())
+    users = Users(conn_str())
+    print('verify admin:',users.verify('administrador','12345'))

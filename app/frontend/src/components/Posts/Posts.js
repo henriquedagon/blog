@@ -18,17 +18,25 @@ class Posts extends Component {
             .then(res => res.json())
             .then(
                 (result) => {
-                    this.setState({
-                        posts: result.data.map((res, index) => {
-                            return {
-                                id: index,
-                                image: "http://localhost:5000/api/api/files/"+res.img_filename,
-                                imageName: res.image_name,
-                                title: res.title,
-                                text: res.post
-                            }
-                        })
-                    });
+                    if (result.data){
+                        this.setState({
+                            posts: result.data.map((res, index) => {
+                                return {
+                                    id: index,
+                                    image: "http://localhost:5000/api/api/files/"+res.img_filename,
+                                    imageName: res.image_name,
+                                    title: res.title,
+                                    text: res.post
+                                }
+                            })
+                        });    
+                    } else {
+                        this.setState({
+                            posts: [
+                                {'id': 0, image: blue_screen, imageName: 'blue screen', text: 'deu kao'},
+                            ],
+                        })    
+                    }
                 },
                 (error) => {
                     this.setState({
