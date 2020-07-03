@@ -164,6 +164,9 @@ def authenticate(permitted_groups):
 
 ######################################################################################
 # endpoints
+@app.route('/')
+def home():
+    return 'Blog Rest-API'
 
 @blog_api_ns.route('/get_token/<encrypted_credentials>')
 class Auth(Resource):

@@ -6,7 +6,7 @@ from io import BytesIO
 ##################################################################################
 # database
 def conn_str():
-    return "dbname='blog' user='postgres' password='postgres123++' host='localhost' port='5432'"
+    return "dbname='blog' user='postgres' password='postgres123++' host='blog-db' port='5432'"
 
 # --------------------------------
 # Posts class

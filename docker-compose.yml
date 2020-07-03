@@ -15,8 +15,8 @@ services:
       PGADMIN_DEFAULT_PASSWORD: "postgres123++"
     ports:
       - "15432:80"
-    links:
-      - blog-db
+    # links:
+    #   - blog-db
     depends_on:
       - blog-db
     networks:
