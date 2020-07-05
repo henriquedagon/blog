@@ -89,6 +89,8 @@ users_table = backend.Users(backend.conn_str())
 if not os.path.isdir(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
 
+initialize_app(app)
+
 ######################################################################################
 # parsers and models
 add_post_parser = api.parser()
@@ -287,5 +289,4 @@ class Files(Resource):
 
 
 if __name__ == '__main__':
-    initialize_app(app)
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

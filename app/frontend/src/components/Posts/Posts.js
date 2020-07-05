@@ -14,7 +14,7 @@ class Posts extends Component {
     }   
     // get posts
     componentDidMount() {
-        fetch("http://localhost:5000/api/api/posts/")
+        fetch("/api/api/posts/") // http://localhost:5000
             .then(res => res.json())
             .then(
                 (result) => {
@@ -23,7 +23,7 @@ class Posts extends Component {
                             posts: result.data.map((res, index) => {
                                 return {
                                     id: index,
-                                    image: "http://localhost:5000/api/api/files/"+res.img_filename,
+                                    image: "/api/api/files/"+res.img_filename,
                                     imageName: res.image_name,
                                     title: res.title,
                                     text: res.post

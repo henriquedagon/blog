@@ -3,13 +3,12 @@ import './AddPost.css'
 import axios from 'axios'
 import cors from 'cors'
 import { Redirect } from 'react-router';
-axios.defaults.baseURL = 'http://localhost:5000/api/api'
+axios.defaults.baseURL = 'http://blog-api:5000/api/api'
 axios.defaults.headers.common['mode'] = 'no-cors'
 
 class AddPost extends React.Component{
     constructor (props){
         super (props)
-
     }
 
     state = {
@@ -25,7 +24,7 @@ class AddPost extends React.Component{
         
         axios.defaults.headers.common['token'] = this.props.token
         console.log('token:',this.props.token)
-        axios.post('http://localhost:5000/api/api/add_post/', data)
+        axios.post('http://blog-api:5000/api/api/add_post/', data)
             .then(response => console.log(response))
         this.setState({postAdded:true})
     }

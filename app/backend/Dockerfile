@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
-CMD ["python","app.py"]
+CMD ["gunicorn", "wsgi:app", "-b", "0.0.0.0:5000", "--reload", "--timeout", "300"]
