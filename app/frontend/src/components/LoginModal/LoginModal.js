@@ -34,7 +34,7 @@ class loginModal extends React.Component{
         
         const account = event.target.account.value
         const that = this
-        fetch('http://localhost:5000/api/api/get_token/'+fernetToken.token, {
+        fetch('http://0.0.0.0:5000/api/api/get_token/'+fernetToken.token, {
           method: 'GET',
         }).then(res => res.json()).then(
             result => {

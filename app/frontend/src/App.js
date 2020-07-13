@@ -37,7 +37,7 @@ class App extends React.Component {
         })
         this.toggleLoginModal()
         // console.log('user:',this.state.account)
-        // console.log('token from app:',this.state.authToken)
+        console.log('token from app:',this.state.authToken)
         // console.log('logged from app:',this.state.loggedIn)
     }
 

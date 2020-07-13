@@ -1,9 +1,8 @@
 import React from 'react';
 import './AddPost.css'
 import axios from 'axios'
-import cors from 'cors'
 import { Redirect } from 'react-router';
-axios.defaults.baseURL = 'http://blog-api:5000/api/api'
+// axios.defaults.baseURL = 'http://blog-api:5000/api/api'
 axios.defaults.headers.common['mode'] = 'no-cors'
 
 class AddPost extends React.Component{
@@ -22,10 +21,18 @@ class AddPost extends React.Component{
         const data = new FormData(form)
         data.append('author',this.props.account)
         
-        axios.defaults.headers.common['token'] = this.props.token
         console.log('token:',this.props.token)
-        axios.post('http://blog-api:5000/api/api/add_post/', data)
+        axios.defaults.headers.common['token'] = this.props.token
+        axios.post('http://0.0.0.0:5000/api/api/add_post/', data, {headers: {'token': this.props.token}})
             .then(response => console.log(response))
+
+        // let myrequest = fetch('http://0.0.0.0:5000/api/api/add_post/', {
+        //     method: "POST", 
+        //     body: data,
+        //     headers: {token: this.props.token}
+        // }).then(res => res.json()).then(response => console.log(response), (error) => console.log('error:',error))
+        // console.log(myrequest)
+        
         this.setState({postAdded:true})
     }
 

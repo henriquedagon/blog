@@ -6,7 +6,7 @@ from io import BytesIO
 ##################################################################################
 # database
 def conn_str():
-    return "dbname='blog' user='postgres' password='postgres123++' host='blog-db' port='5432'"
+    return "dbname='blog' user='postgres' password='postgres123++' host='localhost' port='5432'"
 
 # --------------------------------
 # Posts class
@@ -25,7 +25,7 @@ class Posts:
                                                 img_filename VARCHAR(1000) not null, 
                                                 image_name VARCHAR(1000) not null,
                                                 author VARCHAR(100) not null, 
-                                                date VARCHAR(10) not null
+                                                date VARCHAR(20) not null
                                             )''')
         self.conn.commit()
 
@@ -99,7 +99,9 @@ def byte2image(b):
 
 if __name__ == '__main__':
     posts = Posts(conn_str())
+    posts.insert('cvb', 'jhg', 'jhg', '20200712215942_bonita.jpeg', 'bonita.jpeg', 'jkgkj', '20200712215942')
     print('posts:',posts.view())
 
     users = Users(conn_str())
     print('verify admin:',users.verify('administrador','12345'))
+

@@ -14,6 +14,10 @@ RUN npm install --silent
 RUN npm install react-scripts@3.4.1 -g --silent
 RUN npm install axios --silent
 
+# -----
+# other installs
+RUN apt-get update && apt-get install -y vim
+# -----
 COPY . ./
 
 # start app

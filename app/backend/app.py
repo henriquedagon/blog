@@ -224,21 +224,30 @@ class AddPost(Resource):
             categories = request.form.get("categories")
             author = request.form.get("author")
             img_buffer = request.files.getlist('image')[0]
-
             now_time = datetime.now().strftime('%Y%m%d%H%M%S')
-            now_date = datetime.now().strftime('%Y%m%d')
+            # now_date = datetime.now().strftime('%Y%m%d')
 
+            print('entrou no add post')
             buffer_filename = f"{now_time}_{img_buffer.filename}"
             img_buffer.save(os.path.join(UPLOAD_DIRECTORY, buffer_filename))
 
+            print('salvou imagem')
+            print(title, 
+                            ppost, 
+                            categories, 
+                            buffer_filename, 
+                            img_buffer.filename, 
+                            author, 
+                            now_time)
             posts_table.insert(title, 
                             ppost, 
                             categories, 
                             buffer_filename, 
                             img_buffer.filename, 
                             author, 
-                            now_date)
+                            now_time)
             
+            print('inseriu')
             return {'status': 'post ok'}
         except KeyError as e:
             blog_api_ns.abort(400, e.__doc__, status = "Could not save information", 

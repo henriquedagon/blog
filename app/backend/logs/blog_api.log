@@ -1296,3 +1296,290 @@ werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server e
 [2020-07-03 13:49:44,164] INFO in _internal: 127.0.0.1 - - [03/Jul/2020 13:49:44] "GET /api/ HTTP/1.1" 200 -
 [2020-07-03 13:49:44,425] INFO in _internal: 127.0.0.1 - - [03/Jul/2020 13:49:44] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
 [2020-07-03 13:49:46,397] INFO in _internal: 127.0.0.1 - - [03/Jul/2020 13:49:46] "GET /api/swagger.json HTTP/1.1" 200 -
+[2020-07-12 21:43:44,117] INFO in _internal:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2020-07-12 21:43:44,124] INFO in _internal:  * Restarting with stat
+[2020-07-12 21:43:46,435] WARNING in _internal:  * Debugger is active!
+[2020-07-12 21:43:48,231] INFO in _internal:  * Debugger PIN: 169-502-427
+[2020-07-12 21:47:29,781] DEBUG in app: encrypted_credentials: gAAAAABfC68iAAECAwQFBgcICQoLDA0OD7chTie6dAlctSlII61cYL-CsF8NzPoC7r116XtRzSTTy2KeJ0KpDeb3mZO4a9AUtrXn9MV8gW4LvXzutk2K92GAOSEth5YQeTPRq1RMD9FCBPo_gokQeOupurPIM-9LdgFEmhH4jPLR_vTPLJXMK8k59wTPJBxiG6D1pltJOl0x
+[2020-07-12 21:47:30,504] DEBUG in app: credentials: {'sys': 'blog', 'usr': 'administrador', 'psw': '12345', 'grp': '2', 'tme': 'Sun Jul 12 2020 21:47:29 '}, verified: True
+[2020-07-12 21:47:30,505] DEBUG in app: 
+[2020-07-12 21:47:47,906] DEBUG in app: ***authentication***
+[2020-07-12 21:47:47,909] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:47:47,912] DEBUG in app: ***authentication end***
+[2020-07-12 21:47:47,941] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 240, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(10)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 248, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+[2020-07-12 21:48:09,448] DEBUG in app: ***authentication***
+[2020-07-12 21:48:09,452] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:48:09,454] DEBUG in app: ***authentication end***
+[2020-07-12 21:48:09,485] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 240, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 248, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+[2020-07-12 21:49:26,586] DEBUG in app: ***authentication***
+[2020-07-12 21:49:26,590] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:49:26,594] DEBUG in app: ***authentication end***
+[2020-07-12 21:49:26,622] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 240, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(10)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 248, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+[2020-07-12 21:51:29,056] DEBUG in app: ***authentication***
+[2020-07-12 21:51:29,057] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:51:29,061] DEBUG in app: ***authentication end***
+[2020-07-12 21:51:29,080] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 240, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 248, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+[2020-07-12 21:52:57,385] DEBUG in app: ***authentication***
+[2020-07-12 21:52:57,386] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:52:57,387] DEBUG in app: ***authentication end***
+[2020-07-12 21:52:57,398] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 240, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(10)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 248, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+[2020-07-12 21:57:34,405] DEBUG in app: ***authentication***
+[2020-07-12 21:57:34,411] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:57:34,415] DEBUG in app: ***authentication end***
+[2020-07-12 21:57:34,461] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 241, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(10)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 250, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+[2020-07-12 21:59:42,202] DEBUG in app: ***authentication***
+[2020-07-12 21:59:42,205] DEBUG in app: token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ2ODc2NTAsImlhdCI6MTU5NDYwMTI1MCwic3lzIjoiYmxvZyIsInVzciI6ImFkbWluaXN0cmFkb3IiLCJwc3ciOiIxMjM0NSIsImdycCI6IjIifQ.Fxq0fz8G35V2YybkSoYLhFwb9GyZ7Fu6ejfx5kOEv-k
+[2020-07-12 21:59:42,209] DEBUG in app: ***authentication end***
+[2020-07-12 21:59:42,232] ERROR in app: Exception on /api/api/add_post/ [POST]
+Traceback (most recent call last):
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 248, in post
+    now_time)
+  File "/home/crypto/Projects/Blog/app/backend/backend.py", line 38, in insert
+    ('{title}', '{post}', '{categories}', '{img_filename}', '{image_name}', '{author}', '{date}')''')
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(10)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 163, in decorated_function
+    return f(self, error, credentials, *args, **kwargs)
+  File "/home/crypto/Projects/Blog/app/backend/app.py", line 257, in post
+    statusCode = "500")
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/namespace.py", line 141, in abort
+    abort(*args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/flask_restplus/errors.py", line 31, in abort
+    flask.abort(code)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 772, in abort
+    return _aborter(status, *args, **kwargs)
+  File "/home/crypto/miniconda3/envs/blog/lib/python3.7/site-packages/werkzeug/exceptions.py", line 753, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
